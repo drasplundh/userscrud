@@ -84,6 +84,11 @@ public class UserController {
 				.buildAndExpand(savedPost.getId()).toUri();
 		return ResponseEntity.created(location).build();
 	}
+
+	@RequestMapping("/test")
+	public String test() {
+		return "EVERYTHING IS FUNCTIONAL";
+	}
 	
 
 }
