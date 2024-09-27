@@ -55,7 +55,7 @@ public class UserController {
 //	}
 	
 	@RequestMapping("/deleteUser")
-	public String deleteUserByName(@RequestParam("name") String name, BindingResult br) {
+	public String deleteUserByName(@RequestParam("name") String name) {
 		userService.deleteUserByName(name);
 		ModelAndView mav = new ModelAndView("simpleDelete");
 		mav.addObject("users", userService.getAllUsers());
