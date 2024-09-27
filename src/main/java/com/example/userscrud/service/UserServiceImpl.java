@@ -59,6 +59,7 @@ public class UserServiceImpl implements UserService {
 			}
 		}
 		if (nameCount != 1) {
+			System.out.println("nameCount: " + nameCount);
 			System.out.println("Multiple users with same name, cannot delete!");
 		} else {
 			System.out.println("Delete should execute");
